@@ -1,0 +1,22 @@
+1 . App 
+2. UserTable
+3. Interface
+4. Add data, imports user table, pass props to userTable
+5. import interface, write Props and map data
+=> Show datafinish
+
+
+Add New User:
+1. make component AddUser
+2. write function addUser at App.js
+3. pass props to comonent AddUser at App.tsx
+4. tao funcrion add at App.tsx
+5 write interface and write code for add function
+
+
+Delete User:
+1. Tao function delete user at App
+2. Khai bao thuoc tinh porps tai interface cua component userTable
+
+
+Update:

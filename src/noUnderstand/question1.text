@@ -1,0 +1,88 @@
+// what's the difference between the two definitions;
+
+
+
+// interface Props {
+//     name: string;
+//   }
+  
+//   const PrintName: React.FC<Props> = (props) => {
+//     return (
+//       <div>
+//         <p style={{ fontWeight: props.priority ? "bold" : "normal" }}>{props.name}</p>
+//       </div>
+//     )
+//   }
+  
+  
+//   const PrintName2 = (props:Props) => {
+//     return (
+//       <div>
+//         <p style={{ fontWeight: props.priority ? "bold" : "normal" }}>{props.name}</p>
+//       </div>
+//     )
+//   }
+
+
+
+// #src/components/StateHooksComponent.tsx
+// import React from "react";
+// interface Props {
+// }
+// const StateHooksComponent: React.FC<Props> = ({}) => {
+//     return (
+//         <div>
+//             State Hooks component
+//         </div>
+//     )
+// }
+// export default StateHooksComponent;
+
+
+// Therefore, writing
+
+// const PrintName2 = (props:Props)
+// is akin to
+
+// const PrintName2: JSX.Element = (props:Props) 
+
+
+
+
+
+// const [name, setName] = useState<string>('');
+// 3
+// const [options, setOptions] = useState<Array<string>>([]);
+
+
+
+
+// import React, { FunctionComponent } from 'react'; // importing FunctionComponent
+
+// type CardProps = {
+//   title: string,
+//   paragraph: string
+// }
+
+// export const Card: FunctionComponent<CardProps> = ({ title, paragraph }) => <aside>
+//   <h2>{ title }</h2>
+//   <p>
+//     { paragraph }
+//   </p>
+// </aside>
+
+
+// co the viet theo kieu tren thi co th viet them children
+// type CardProps = {
+//     title: string,
+//     paragraph: string
+//   }
+  
+//   // we can use children even though we haven't defined them in our CardProps
+//   export const Card: FunctionComponent<CardProps> = ({ title, paragraph, children }) => <aside>
+//     <h2>{ title }</h2>
+//     <p>
+//       { paragraph }
+//     </p>
+//     { children }
+//   </aside>
